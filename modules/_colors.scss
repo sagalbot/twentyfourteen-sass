@@ -1,0 +1,357 @@
+//  Reset
+
+a {
+  color: $highlight-color;
+  text-decoration: none;
+}
+
+::selection {
+  background: $highlight-color;
+  color: #fff;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: $highlight-color;
+  color: #fff;
+  text-shadow: none;
+}
+
+//  -- Repeatable Patterns
+
+//  buttons
+button,
+.contributor-posts-link,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  background-color: $highlight-color;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 30px 11px;
+  text-transform: uppercase;
+  vertical-align: bottom;
+}
+
+button:hover,
+button:focus,
+.contributor-posts-link:hover,
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background-color: $highlight-color-hover;
+  color: #fff;
+}
+
+//  Search in the header
+.search-toggle {
+  background-color: $highlight-color;
+  cursor: pointer;
+  float: right;
+  height: 48px;
+  margin-right: 38px;
+  text-align: center;
+  width: 48px;
+}
+.search-box {
+  background-color: $highlight-color-hover;
+  padding: 12px;
+}
+
+// -- Navigation
+.site-navigation a:hover {
+  color: $highlight-color-hover;
+}
+
+//  Mediaelements
+.hentry .mejs-controls .mejs-time-rail .mejs-time-current {
+  background: $highlight-color;
+}
+
+//  Paging Navigation
+.paging-navigation .page-numbers.current {
+  border-top: 5px solid $highlight-color;
+}
+
+//  Primary Sidebar, Footer Sidebar Widgets
+.widget button,
+.widget input[type="button"],
+.widget input[type="reset"],
+.widget input[type="submit"] {
+  background-color: $highlight-color;
+  border: 0;
+  font-size: 12px;
+  padding: 5px 15px 4px;
+}
+
+.widget input[type="button"]:hover,
+.widget input[type="button"]:focus,
+.widget input[type="reset"]:hover,
+.widget input[type="reset"]:focus,
+.widget input[type="submit"]:hover,
+.widget input[type="submit"]:focus {
+  background-color: $highlight-color-hover;
+}
+
+.widget input[type="button"]:active,
+.widget input[type="reset"]:active,
+.widget input[type="submit"]:active {
+  background-color: #55d737;
+}
+
+//  Calendar
+.widget_calendar tbody a {
+  background-color: $highlight-color;
+  color: #fff;
+  display: block;
+}
+
+//  -- Content Sidebar
+
+//  Widget Links
+.content-sidebar .widget a {
+  color: $highlight-color;
+}
+
+//  Widget Buttons
+.content-sidebar .widget input[type="button"],
+.content-sidebar .widget input[type="reset"],
+.content-sidebar .widget input[type="submit"] {
+  background-color: $highlight-color;
+  border: 0;
+  color: #fff;
+}
+
+.content-sidebar .widget input[type="button"]:hover,
+.content-sidebar .widget input[type="button"]:focus,
+.content-sidebar .widget input[type="reset"]:hover,
+.content-sidebar .widget input[type="reset"]:focus,
+.content-sidebar .widget input[type="submit"]:hover,
+.content-sidebar .widget input[type="submit"]:focus {
+  background-color: $highlight-color-hover;
+}
+
+.content-sidebar .widget input[type="button"]:active,
+.content-sidebar .widget input[type="reset"]:active,
+.content-sidebar .widget input[type="submit"]:active {
+  background-color: #55d737;
+}
+
+//  Slider Paging Controls
+.slider-control-paging .slider-active:before,
+.slider-control-paging .slider-active:hover:before {
+  background-color: $highlight-color;
+}
+
+.slider-direction-nav a:hover {
+  background-color: $highlight-color;
+}
+
+//  Entries
+.entry-title a:hover {
+  color: $highlight-color-hover;
+}
+.entry-meta a:hover {
+  color: $highlight-color-hover;
+}
+//  Entry Meta
+.cat-links a:hover {
+  color: $highlight-color-hover;
+}
+.entry-meta .tag-links a:hover {
+  background-color: $highlight-color-hover;
+  color: #fff;
+}
+.entry-meta .tag-links a:hover:before {
+  border-right-color: $highlight-color-hover;
+}
+//  Entry Content
+.entry-content .edit-link a:hover {
+  color: $highlight-color-hover;
+}
+
+//  Page Links
+.page-links a:hover {
+  background: $highlight-color-hover;
+  border: 1px solid $highlight-color-hover;
+  color: #fff;
+}
+
+//  -- Media Queries
+
+//  Primary Navigation
+.primary-navigation ul ul {
+  background-color: $highlight-color;
+  float: left;
+  margin: 0;
+  position: absolute;
+  top: 48px;
+  left: -999em;
+  z-index: 99999;
+}
+
+.primary-navigation li:hover > a,
+.primary-navigation li.focus > a {
+    background-color: $highlight-color;
+    color: #fff;
+}
+
+//  Secondary Nav
+.secondary-navigation ul ul {
+  background-color: $highlight-color;
+  position: absolute;
+  top: 0;
+  left: -999em;
+  width: 182px;
+  z-index: 99999;
+}
+
+.secondary-navigation li li {
+  border-top: 0;
+}
+
+.secondary-navigation li:hover > a,
+.secondary-navigation li.focus > a {
+  background-color: $highlight-color;
+  color: #fff;
+}
+
+
+
+//     Hovers
+
+.page-links a:hover {
+  background: $highlight-color-hover;
+  border: 1px solid $highlight-color-hover;
+  color: #fff;
+}
+.post-navigation a:hover,
+.image-navigation a:hover {
+  color: $highlight-color-hover;
+}   
+.paging-navigation a:hover {
+border-top: 5px solid $highlight-color-hover;
+color: #2b2b2b;  
+}
+.comment-list .trackback a:hover,
+.comment-metadata a:hover {
+color: $highlight-color-hover;
+}  
+.comment-reply-title small a:hover {
+color: $highlight-color-hover;
+}     
+.widget a:hover {
+color: $highlight-color-hover;
+}  
+.widget input[type="submit"]:hover,
+.widget input[type="submit"]:focus {
+background-color: $highlight-color-hover;
+}  
+.widget-title a:hover {
+color: $highlight-color-hover;
+}  
+.widget_calendar tbody a:hover {
+background-color: $highlight-color-hover;
+}  
+.widget_twentyfourteen_ephemera .entry-meta a:hover {
+color: $highlight-color-hover;
+}  
+.content-sidebar .widget a:hover {
+color: $highlight-color-hover;
+}   
+.content-sidebar .widget input[type="submit"]:hover,
+.content-sidebar .widget input[type="submit"]:focus {
+background-color: $highlight-color-hover;
+}  
+.content-sidebar .widget .widget-title a:hover {
+color: $highlight-color-hover;
+}  
+.content-sidebar .widget_twentyfourteen_ephemera .entry-meta a:hover {
+color: $highlight-color-hover;
+}  
+.site-info a:hover {
+color: $highlight-color-hover;
+}  
+.featured-content a:hover {
+color: $highlight-color-hover;
+}  
+.slider-control-paging a:hover:before {
+background-color: $highlight-color-hover;
+}  
+.primary-navigation ul ul a:hover,
+.primary-navigation ul ul li.focus > a {
+background-color: $highlight-color-hover;
+}
+.secondary-navigation ul ul a:hover,
+.secondary-navigation ul ul li.focus > a {
+background-color: $highlight-color-hover;
+}
+
+
+
+//  Accents
+
+
+a {
+color: $accent-color;
+}
+::selection {
+background: $accent-color;
+}
+::-moz-selection {
+background: $accent-color;
+}
+input[type="reset"],
+input[type="submit"] {
+background-color: $accent-color;
+}
+.search-toggle {
+background-color: $accent-color;
+}
+.hentry .mejs-controls .mejs-time-rail .mejs-time-current {
+background: $accent-color;
+}
+.paging-navigation .page-numbers.current {
+border-top: 5px solid $accent-color;
+}
+.widget input[type="reset"],
+.widget input[type="submit"] {
+background-color: $accent-color;
+}
+.widget_calendar tbody a {
+background-color: $accent-color;
+}
+.content-sidebar .widget a {
+color: $accent-color;
+}
+.content-sidebar .widget input[type="reset"],
+.content-sidebar .widget input[type="submit"] {
+background-color: $accent-color;
+}
+.slider-control-paging .slider-active:before,
+.slider-control-paging .slider-active:hover:before {
+// background-color: $accent-color;
+}
+.slider-direction-nav a:hover {
+// background-color: $accent-color;
+}
+.primary-navigation ul ul {
+background-color: $accent-color;
+}
+.primary-navigation li:hover > a,
+.primary-navigation li.focus > a {
+// background-color: $accent-color;
+}
+.secondary-navigation ul ul {
+background-color: $accent-color;
+}
+.secondary-navigation li:hover > a,
+.secondary-navigation li.focus > a {
+// background-color: $accent-color;
+}
