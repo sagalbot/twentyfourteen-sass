@@ -47,6 +47,7 @@ $code-width: 900px;
 @import "bourbon/bourbon";
 @import "../twentyfourteen/style.css";
 @import "modules/colors";
+@import "modules/fonts";
 
 /* Layout */
 
@@ -59,6 +60,14 @@ $code-width: 900px;
 
 	.site-title a:hover {
 		color: #000;
+	}
+
+	.site-title .genericon {
+		display: inline;
+		font-size: 165%;
+		position: relative;
+		top: 8px;
+		left: 5px;
 	}
 
 }
@@ -88,16 +97,22 @@ $code-width: 900px;
 		background: none;
 		color: $green-bright;
 	}
-
-	i {
-		display: inline;
-		font-size: 165%;
-		line-height: -3.9;
-		position: relative;
-		top: 5px;
-		left: -3px;
-	}
 }
+.primary-navigation li a i.genericon {
+	display: inline;
+	font-size: 165%;
+	line-height: -3.9;
+	position: relative;
+	top: 5px;
+	left: -3px;
+}
+.primary-navigation li a i.icon-fontello {
+	left: 0;
+	left: -2px;
+	position: relative;
+	font-size: 105%;
+}
+
 /* Primary Sidebar & Widgets */
 
 #secondary {
