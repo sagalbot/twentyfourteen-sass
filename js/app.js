@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
 	$('#primary-navigation a[href="http://code.sagalbot.com"]').prepend('<i class="code-sagalbot genericon genericon-code"></i>').parent('li').addClass('code-sagalbot');
 	
 	// code on code.sagalbot
-	$('.site-title a[rel="home"]').append('<i class="code-sagalbot genericon genericon-code"></i>');
+	if( sagalbot.url == "http://code.sagalbot.com" ) $('.site-title a[rel="home"]').append('<i class="code-sagalbot genericon genericon-code"></i>');
 
 	//  Photo Icon
 	$('#primary-navigation a[href="'+sagalbot.url+'/category/photography/"]').prepend('<i class="genericon genericon-image"></i>');
