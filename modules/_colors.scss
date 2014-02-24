@@ -49,24 +49,78 @@ input[type="submit"]:focus {
   color: #fff;
 }
 
+//  Header
+.site-header {
+  background-color: $header-background;
+  max-width: 100%; 
+  @include transition ( background-color .25s ease-in-out );
+  &:hover {
+    background-color: $header-background-hover;
+  }
+}
+
 //  Search in the header
 .search-toggle {
-  background-color: $highlight-color;
+  // background-color: $highlight-color;
+  background-color: #fff;
+  color: #000;
   cursor: pointer;
   float: right;
   height: 48px;
   margin-right: 38px;
   text-align: center;
   width: 48px;
+
+  &.active:before {
+    color: #fff;
+  }
+
+  &:before {
+    color: #000;
+  }
+
+  &:hover:before {
+    color: #fff;
+  }
 }
 .search-box {
-  background-color: $highlight-color-hover;
+  background-color: #fff;
   padding: 12px;
+  border-bottom: 3px solid $purple;
+
+  .search-field {
+    padding: 0 1em;
+    width: 100%;
+    text-align: center;
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+  }
+}
+.search-toggle:hover,
+.search-toggle.active {
+  // background-color: $green;
+  background-color: $purple;
 }
 
+
 // -- Navigation
-.site-navigation a:hover {
-  color: $highlight-color-hover;
+.site-navigation a {
+  
+  color: $header-text-color;
+
+  &:hover {
+    color: $highlight-color-hover;
+  }
+}
+
+.site-navigation .current_page_item > a,
+.site-navigation .current_page_ancestor > a,
+.site-navigation .current-menu-item > a,
+.site-navigation .current-menu-ancestor > a {
+  // color: $green-bright;
+  color: $purple;
+  // color: #fff;
+  font-weight: 900;
 }
 
 //  Mediaelements
@@ -102,7 +156,7 @@ input[type="submit"]:focus {
 .widget input[type="button"]:active,
 .widget input[type="reset"]:active,
 .widget input[type="submit"]:active {
-  background-color: #55d737;
+  background-color: $green-bright;
 }
 
 //  Calendar
@@ -140,7 +194,7 @@ input[type="submit"]:focus {
 .content-sidebar .widget input[type="button"]:active,
 .content-sidebar .widget input[type="reset"]:active,
 .content-sidebar .widget input[type="submit"]:active {
-  background-color: #55d737;
+  background-color: $green-bright;
 }
 
 //  Slider Paging Controls
@@ -309,9 +363,6 @@ background: $accent-color;
 }
 input[type="reset"],
 input[type="submit"] {
-background-color: $accent-color;
-}
-.search-toggle {
 background-color: $accent-color;
 }
 .hentry .mejs-controls .mejs-time-rail .mejs-time-current {

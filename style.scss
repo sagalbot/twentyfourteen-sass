@@ -30,6 +30,10 @@ $highlight-color-hover: saturate(adjust-hue($highlight-color, 10), 100);
 
 $accent-color: $purple;	
 
+$header-background: rgba(255,255,255,.75);
+$header-background-hover: rgba(255,255,255,1);
+$header-text-color: #000;
+
 $sidebar-text: #333333;
 $sidebar-primary-bg: #ffffff;
 $sidebar-primary-heading-color: $gray;
@@ -52,17 +56,22 @@ $code-width: 900px;
 	&:before {
 		background: $sidebar-primary-bg;
 	}
+
+	.site-title a:hover {
+		color: #000;
+	}
+
 }
 
-.site-header {
-	background-color: #000;
-	max-width: 100%;
-}
+// .site-header {
+// 	background-color: #000;
+// 	max-width: 100%;
+// }
 
-#site-header {
-	background: #000;
-	// text-align: center;
-}
+// #site-header {
+// 	background: #000;
+// 	// text-align: center;
+// }
 
 .site-content .entry-header,
 .site-content .entry-content,
@@ -72,6 +81,23 @@ $code-width: 900px;
 	max-width: $primary-content-width;
 }
 
+//  Code Icons
+.primary-navigation li.code-sagalbot {
+
+	a:hover {
+		background: none;
+		color: $green-bright;
+	}
+
+	i {
+		display: inline;
+		font-size: 165%;
+		line-height: -3.9;
+		position: relative;
+		top: 5px;
+		left: -3px;
+	}
+}
 /* Primary Sidebar & Widgets */
 
 #secondary {
