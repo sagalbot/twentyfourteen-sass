@@ -394,6 +394,9 @@ input[type="submit"] {
     top: 8px;
     left: 5px; }
 
+@media screen and (min-width: 846px) {
+  #secondary {
+    padding-top: 72px; } }
 .site-content .entry-header,
 .site-content .entry-content,
 .site-content .entry-summary,
